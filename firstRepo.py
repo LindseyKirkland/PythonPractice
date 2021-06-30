@@ -1,34 +1,42 @@
-#arithmetic operators are addition(+), subtraction(-), multiplication)*), and division(/ or //)
-#for division, / will give you a float number and // will round for an intiger
-#% returns the remainder of the division.
-#to perform ecponential operations, use ** 
+#defining if statements
 
-print(10%3)
-print(2**3)
-print(10//3)
+the_weekend = False
+the_week = False
+wednesday = True
 
-#we can also use augmented assigment operators if we want to change/ redefine an intiger
-#python also understand order of operations so you don't need additional parenthesis
-#order is exponents(**), multiplcation/ division, addition/subtraction
-#HOWEVER we can add parenthesis to add that to the front of the order
+if the_weekend:
+    print("yay! it's the weekend")
+    print('enjoy')
+elif the_week:
+    print("it's still the week")
+    print("hang in there")
+elif wednesday:
+    print("it is wednesday my dudes")
+else:
+    print("it's friday!")
+    print("get ready for the weekend")
 
-x=10
-x+=3
-print(x)
+#down payment on a house exercise
+# good_credit = False
 
-y=10
-y-=3
-print(y)
+# if good_credit:
+#     print("down payemnt is", 1000000 *.1)
+# else:
+#     print("down payment is", 1000000 *.2)
 
-print(10+3*2)
+#try number 2
 
-z=(2+3) * 10 -2
-print(z)
 
-#while // can round your division, you can also use a general funciton to round floaters in general
-aa=2.9
-print(round(aa))
-#you can also print the absolute value of a number
-print(abs(-123))
-#search python 3 math module for more math documentation- like ceilings and floors
+# goodcredit = True
 
+# price = 1000000
+
+def cred_check (credit, price):
+    if credit == 'good':
+        downpayment =(price * .1)
+    else:
+        downpayment=(price * .2)
+    print(f"Down payemnt is: ${downpayment }")
+
+
+cred_check('bad', 15000)

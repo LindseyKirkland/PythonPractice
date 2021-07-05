@@ -172,3 +172,4 @@ def cred_check (credit, price):
 
 
 cred_check('bad', 15000)
+

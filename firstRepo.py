@@ -1,42 +1,25 @@
-#defining if statements
+#using the AND operator
+#If we have multiple Booleans defined as True, we can write an and statement
 
-the_weekend = False
-the_week = False
-wednesday = True
+is_slimy = True
+has_Shell = False
 
-if the_weekend:
-    print("yay! it's the weekend")
-    print('enjoy')
-elif the_week:
-    print("it's still the week")
-    print("hang in there")
-elif wednesday:
-    print("it is wednesday my dudes")
-else:
-    print("it's friday!")
-    print("get ready for the weekend")
+if is_slimy and has_Shell:
+    print("it's a snail")
 
-#down payment on a house exercise
-# good_credit = False
+if is_slimy:
+    print("it's a slug")
 
-# if good_credit:
-#     print("down payemnt is", 1000000 *.1)
-# else:
-#     print("down payment is", 1000000 *.2)
+if is_slimy or has_Shell:
+    print("it's a mollusk")
+else: print("it's another animal")
 
-#try number 2
+#in addition to 'and' and 'or', you can also use 'not' as a boolean value
+#use "and" to connect the statements and "not" to print the statement if it's false.
+writing_tool = True
+has_graphite = False
 
-
-# goodcredit = True
-
-# price = 1000000
-
-def cred_check (credit, price):
-    if credit == 'good':
-        downpayment =(price * .1)
-    else:
-        downpayment=(price * .2)
-    print(f"Down payemnt is: ${downpayment }")
-
-
-cred_check('bad', 15000)
+if writing_tool and not has_graphite:
+    print("it's a pen")
+if writing_tool and has_graphite:
+    print("it's a pencil")
